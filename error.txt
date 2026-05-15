@@ -1,1 +1,1 @@
-s
+grep -n "passive" ~/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/socket/engine.js | head -10
