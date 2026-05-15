@@ -1,1 +1,1 @@
-s
+grep -A5 "Sending registration node" /mnt/user-data/uploads/error__3_.txt | head -30
