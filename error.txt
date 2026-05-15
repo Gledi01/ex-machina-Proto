@@ -1,2 +1,1 @@
-grep -n "sendLoginNode\|sendRestoreSession\|sendRegistrationNode\|async sendLogin" \
-  ~/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/socket/engine.js | head -10
+sed -n '194,205p' ~/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/socket/engine.js
