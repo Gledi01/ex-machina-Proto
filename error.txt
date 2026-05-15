@@ -1,1 +1,3 @@
-grep -n "content:" ~/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/socket/engine.js | grep -v "Buffer\|from(\[" | head -20
+ENGINE=~/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/socket/engine.js
+
+sed -i "s/{ tag: 'signature', attrs: {}, content: signedPreKey\.signature }/{ tag: 'signature', attrs: {}, content: Buffer.from(signedPreKey.signature) }/g" $ENGINE
