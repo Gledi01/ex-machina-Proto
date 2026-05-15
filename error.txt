@@ -1,6 +1,1 @@
-sed -i 's/await sendNode({ tag: "hello", attrs: { to: "s.whatsapp.net" }, content: \[\] });//' \
-  ~/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/socket/engine.js
-
-
-
-sed -n '194,202p' ~/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/socket/engine.js
+sed -n '195,205p' ~/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/socket/engine.js
