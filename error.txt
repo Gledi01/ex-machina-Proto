@@ -1,1 +1,13 @@
-sed -n '185,200p' ~/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/core/noise-handler.js
+sed -i 's/encryptHandshake(noiseKey\.publicKey)/encryptHandshake(Buffer.from(noiseKey.publicKey))/' \
+  ~/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/core/noise-handler.js
+
+
+
+sed -i 's/sharedSecret(privateKey, serverHello\.ephemeral)/sharedSecret(Buffer.from(privateKey), Buffer.from(serverHello.ephemeral))/g' \
+  ~/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/core/noise-handler.js
+
+sed -i 's/sharedSecret(privateKey, serverStaticPub)/sharedSecret(Buffer.from(privateKey), Buffer.from(serverStaticPub))/g' \
+  ~/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/core/noise-handler.js
+
+sed -i 's/sharedSecret(noiseKey\.privateKey, serverHello\.ephemeral)/sharedSecret(Buffer.from(noiseKey.privateKey), Buffer.from(serverHello.ephemeral))/g' \
+  ~/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/core/noise-handler.js
