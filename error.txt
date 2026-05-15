@@ -1,1 +1,9 @@
-sed -n '228,235p' ~/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/socket/engine.js
+ENGINE=~/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/socket/engine.js
+
+sed -i 's/content: creds\.signedIdentityKey\.publicKey,/content: Buffer.from(creds.signedIdentityKey.publicKey),/' $ENGINE
+
+sed -i 's/content: pk\.keyPair\.publicKey,/content: Buffer.from(pk.keyPair.publicKey),/' $ENGINE
+
+sed -i 's/content: signedPreKey\.keyPair\.publicKey,/content: Buffer.from(signedPreKey.keyPair.publicKey),/' $ENGINE
+
+sed -i 's/content: signedPreKey\.signature,/content: Buffer.from(signedPreKey.signature),/' $ENGINE
