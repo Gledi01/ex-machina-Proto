@@ -1,1 +1,10 @@
-s
+ENGINE=~/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/socket/engine.js
+
+# pk.keyPair.publicKey di dalam list pre-keys
+sed -i 's/{ tag: '\''value'\'', attrs: {}, content: pk\.keyPair\.publicKey }/{ tag: '\''value'\'', attrs: {}, content: Buffer.from(pk.keyPair.publicKey) }/g' $ENGINE
+
+# value di skey (signed pre-key)
+sed -i 's/{ tag: '\''value'\'', attrs: {}, content: signedPreKey\.keyPair\.publicKey }/{ tag: '\''value'\'', attrs: {}, content: Buffer.from(signedPreKey.keyPair.publicKey) }/g' $ENGINE
+
+
+grep "tag: 'value'" $ENGINE
