@@ -1,1 +1,1 @@
-s
+grep -n "content:" ~/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/socket/engine.js | grep -v "Buffer\|from(\[" | head -20
