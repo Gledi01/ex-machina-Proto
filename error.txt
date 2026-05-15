@@ -1,1 +1,2 @@
-sed -n '165,185p' ~/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/socket/engine.js
+sed -i "s/log\.trace({ tag, id: attrs\.id }, 'recv node');/log.info({ tag, attrs }, 'recv node');/" \
+  ~/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/socket/engine.js
