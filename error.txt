@@ -1,1 +1,2 @@
-sed -n '195,205p' ~/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/socket/engine.js
+grep -n "handleFrame\|const handleFrame\|frame\.tag\|frame\.attrs\|binaryNodeToString" \
+  ~/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/socket/engine.js | head -15
