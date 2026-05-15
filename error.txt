@@ -1,2 +1,2 @@
-grep -n "encryptFinishPayload\|finalizeHandshake\|processServerHello" \
-  ~/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/core/noise-handler.js | head -20
+grep -n "registration\|KEY_BUNDLE\|encrypt\|xmlns" \
+  ~/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/socket/engine.js | head -30
