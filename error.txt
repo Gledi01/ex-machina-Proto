@@ -1,2 +1,1 @@
-grep -n "registration\|KEY_BUNDLE\|encrypt\|xmlns" \
-  ~/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/socket/engine.js | head -30
+sed -n '205,260p' ~/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/socket/engine.js
