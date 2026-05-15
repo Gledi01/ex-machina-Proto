@@ -1,1 +1,60 @@
 sed -n '205,260p' ~/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/socket/engine.js
+        const tag = generateTag();
+        // Generate initial pre-keys if not yet done
+        const preKeyCount = config_2.SIGNAL_INITIAL_PREKEYS;
+        const preKeys = (0, auth_1.generatePreKeys)(creds.nextPreKeyId, preKeyCount);
+        const signedPreKey = creds.signedPreKey;
+        const registrationNode = {
+            tag: 'iq',
+            attrs: {
+                to: 's.whatsapp.net',
+                type: 'set',
+                id: tag,
+                xmlns: 'encrypt',
+            },
+            content: [
+                {
+                    tag: 'registration',
+                    attrs: {},
+                    content: encodeRegistrationId(creds.registrationId),
+                },
+                {
+                    tag: 'type',
+                    attrs: {},
+                    content: Buffer.from([5]), // KEY_BUNDLE_TYPE
+                },
+                {
+                    tag: 'identity',
+                    attrs: {},
+                    content: creds.signedIdentityKey.publicKey,
+                },
+                {
+                    tag: 'list',
+                    attrs: {},
+                    content: preKeys.map(pk => ({
+                        tag: 'key',
+                        attrs: {},
+                        content: [
+                            { tag: 'id', attrs: {}, content: encodeKeyId(pk.keyId) },
+                            { tag: 'value', attrs: {}, content: pk.keyPair.publicKey },
+                        ],
+                    })),
+                },
+                {
+                    tag: 'skey',
+                    attrs: {},
+                    content: [
+                        { tag: 'id', attrs: {}, content: encodeKeyId(signedPreKey.keyId) },
+                        { tag: 'value', attrs: {}, content: signedPreKey.keyPair.publicKey },
+                        { tag: 'signature', attrs: {}, content: signedPreKey.signature },
+                    ],
+                },
+            ],
+        };
+        log.debug('Sending registration node');
+        await sendNode(registrationNode);
+        // Store pre-keys in the key store
+        const preKeyData = {};
+                                                                                                                                                                      
+┌──(wayan㉿FrostyDev)-[~/proyek/bot/Ex-Machina-Bot]
+└─$ 
