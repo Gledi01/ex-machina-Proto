@@ -1,1 +1,1 @@
-sed -n '120,135p' ~/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/socket/engine.js
+sed -n '185,200p' ~/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/core/noise-handler.js
