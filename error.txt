@@ -1,13 +1,194 @@
-sed -i 's/encryptHandshake(noiseKey\.publicKey)/encryptHandshake(Buffer.from(noiseKey.publicKey))/' \
-  ~/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/core/noise-handler.js
-
-
-
-sed -i 's/sharedSecret(privateKey, serverHello\.ephemeral)/sharedSecret(Buffer.from(privateKey), Buffer.from(serverHello.ephemeral))/g' \
-  ~/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/core/noise-handler.js
-
-sed -i 's/sharedSecret(privateKey, serverStaticPub)/sharedSecret(Buffer.from(privateKey), Buffer.from(serverStaticPub))/g' \
-  ~/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/core/noise-handler.js
-
-sed -i 's/sharedSecret(noiseKey\.privateKey, serverHello\.ephemeral)/sharedSecret(Buffer.from(noiseKey.privateKey), Buffer.from(serverHello.ephemeral))/g' \
-  ~/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/core/noise-handler.js
+13.39.26 [INFO] Menghubungkan ke WhatsApp...
+[{"module":"ws-client"}] WebSocket connecting { url: 'wss://web.whatsapp.com/ws/chat' }
+[{"module":"ws-client"}] undefined WebSocket connection established
+[{"module":"engine"}] undefined Client hello sent
+Trace: [{"module":"noise"}] frame received { tag: undefined }
+    at Object.trace (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/utils/logger.js:53:38)
+    at processFrameBuffer (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/core/noise-handler.js:146:17)
+    at Object.decodeFrame (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/core/noise-handler.js:182:19)
+    at WSClient.<anonymous> (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/socket/engine.js:457:29)
+    at WSClient.emit (node:events:519:28)
+    at WSClient.onMessage (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/socket/ws-client.js:94:14)
+    at WebSocket.<anonymous> (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/socket/ws-client.js:59:46)
+    at WebSocket.emit (node:events:519:28)
+    at Receiver.receiverOnMessage (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/node_modules/ws/lib/websocket.js:1225:20)
+    at Receiver.emit (node:events:519:28)
+[{"module":"noise"}] undefined Noise handshake server hello processed successfully
+[{"module":"noise"}] undefined Noise transport established — connection encrypted
+[{"module":"engine"}] undefined Handshake complete — sending login node
+Trace: [{"module":"engine"}] send node { tag: 'hello', id: undefined }
+    at Object.trace (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/utils/logger.js:53:38)
+    at sendNode (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/socket/engine.js:101:17)
+    at sendLoginNode (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/socket/engine.js:195:15)
+    at /home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/socket/engine.js:135:17
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[{"module":"engine"}] undefined Sending registration node
+Trace: [{"module":"engine"}] send node { tag: 'iq', id: 'BWSZ8WG.0' }
+    at Object.trace (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/utils/logger.js:53:38)
+    at sendNode (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/socket/engine.js:101:17)
+    at sendRegistrationNode (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/socket/engine.js:259:15)
+    at sendLoginNode (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/socket/engine.js:201:19)
+13.39.27 [ERR] Unhandled rejection: Invalid content type for node "identity": object
+[{"module":"ws-client"}] WebSocket closed { code: 1006, reason: '' }
+[{"module":"engine"}] Scheduling reconnect { attempt: 1, backoffMs: 250 }
+[{"module":"ws-client"}] WebSocket connecting { url: 'wss://web.whatsapp.com/ws/chat' }
+[{"module":"ws-client"}] undefined WebSocket connection established
+[{"module":"engine"}] undefined Client hello sent
+Trace: [{"module":"noise"}] frame received { tag: undefined }
+    at Object.trace (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/utils/logger.js:53:38)
+    at processFrameBuffer (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/core/noise-handler.js:146:17)
+    at Object.decodeFrame (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/core/noise-handler.js:182:19)
+    at WSClient.<anonymous> (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/socket/engine.js:457:29)
+    at WSClient.emit (node:events:519:28)
+    at WSClient.onMessage (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/socket/ws-client.js:94:14)
+    at WebSocket.<anonymous> (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/socket/ws-client.js:59:46)
+    at WebSocket.emit (node:events:519:28)
+    at Receiver.receiverOnMessage (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/node_modules/ws/lib/websocket.js:1225:20)
+    at Receiver.emit (node:events:519:28)
+[{"module":"noise"}] undefined Noise handshake server hello processed successfully
+[{"module":"noise"}] undefined Noise transport established — connection encrypted
+[{"module":"engine"}] undefined Handshake complete — sending login node
+Trace: [{"module":"engine"}] send node { tag: 'hello', id: undefined }
+    at Object.trace (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/utils/logger.js:53:38)
+    at sendNode (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/socket/engine.js:101:17)
+    at sendLoginNode (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/socket/engine.js:195:15)
+    at /home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/socket/engine.js:135:17
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[{"module":"engine"}] undefined Sending registration node
+Trace: [{"module":"engine"}] send node { tag: 'iq', id: 'BWSZ8WG.1' }
+    at Object.trace (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/utils/logger.js:53:38)
+    at sendNode (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/socket/engine.js:101:17)
+    at sendRegistrationNode (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/socket/engine.js:259:15)
+    at sendLoginNode (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/socket/engine.js:201:19)
+13.39.28 [ERR] Unhandled rejection: Invalid content type for node "identity": object
+[{"module":"ws-client"}] WebSocket closed { code: 1006, reason: '' }
+[{"module":"engine"}] Scheduling reconnect { attempt: 2, backoffMs: 375 }
+[{"module":"ws-client"}] WebSocket connecting { url: 'wss://web.whatsapp.com/ws/chat' }
+[{"module":"ws-client"}] undefined WebSocket connection established
+[{"module":"engine"}] undefined Client hello sent
+Trace: [{"module":"noise"}] frame received { tag: undefined }
+    at Object.trace (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/utils/logger.js:53:38)
+    at processFrameBuffer (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/core/noise-handler.js:146:17)
+    at Object.decodeFrame (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/core/noise-handler.js:182:19)
+    at WSClient.<anonymous> (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/socket/engine.js:457:29)
+    at WSClient.emit (node:events:519:28)
+    at WSClient.onMessage (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/socket/ws-client.js:94:14)
+    at WebSocket.<anonymous> (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/socket/ws-client.js:59:46)
+    at WebSocket.emit (node:events:519:28)
+    at Receiver.receiverOnMessage (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/node_modules/ws/lib/websocket.js:1225:20)
+    at Receiver.emit (node:events:519:28)
+[{"module":"noise"}] undefined Noise handshake server hello processed successfully
+[{"module":"noise"}] undefined Noise transport established — connection encrypted
+[{"module":"engine"}] undefined Handshake complete — sending login node
+Trace: [{"module":"engine"}] send node { tag: 'hello', id: undefined }
+    at Object.trace (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/utils/logger.js:53:38)
+    at sendNode (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/socket/engine.js:101:17)
+    at sendLoginNode (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/socket/engine.js:195:15)
+    at /home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/socket/engine.js:135:17
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[{"module":"engine"}] undefined Sending registration node
+Trace: [{"module":"engine"}] send node { tag: 'iq', id: 'BWSZ8WG.2' }
+    at Object.trace (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/utils/logger.js:53:38)
+    at sendNode (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/socket/engine.js:101:17)
+    at sendRegistrationNode (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/socket/engine.js:259:15)
+    at sendLoginNode (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/socket/engine.js:201:19)
+13.39.29 [ERR] Unhandled rejection: Invalid content type for node "identity": object
+[{"module":"ws-client"}] WebSocket closed { code: 1006, reason: '' }
+[{"module":"engine"}] Scheduling reconnect { attempt: 3, backoffMs: 562.5 }
+[{"module":"ws-client"}] WebSocket connecting { url: 'wss://web.whatsapp.com/ws/chat' }
+[{"module":"ws-client"}] undefined WebSocket connection established
+[{"module":"engine"}] undefined Client hello sent
+Trace: [{"module":"noise"}] frame received { tag: undefined }
+    at Object.trace (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/utils/logger.js:53:38)
+    at processFrameBuffer (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/core/noise-handler.js:146:17)
+    at Object.decodeFrame (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/core/noise-handler.js:182:19)
+    at WSClient.<anonymous> (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/socket/engine.js:457:29)
+    at WSClient.emit (node:events:519:28)
+    at WSClient.onMessage (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/socket/ws-client.js:94:14)
+    at WebSocket.<anonymous> (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/socket/ws-client.js:59:46)
+    at WebSocket.emit (node:events:519:28)
+    at Receiver.receiverOnMessage (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/node_modules/ws/lib/websocket.js:1225:20)
+    at Receiver.emit (node:events:519:28)
+[{"module":"noise"}] undefined Noise handshake server hello processed successfully
+[{"module":"noise"}] undefined Noise transport established — connection encrypted
+[{"module":"engine"}] undefined Handshake complete — sending login node
+Trace: [{"module":"engine"}] send node { tag: 'hello', id: undefined }
+    at Object.trace (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/utils/logger.js:53:38)
+    at sendNode (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/socket/engine.js:101:17)
+    at sendLoginNode (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/socket/engine.js:195:15)
+    at /home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/socket/engine.js:135:17
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[{"module":"engine"}] undefined Sending registration node
+Trace: [{"module":"engine"}] send node { tag: 'iq', id: 'BWSZ8WG.3' }
+    at Object.trace (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/utils/logger.js:53:38)
+    at sendNode (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/socket/engine.js:101:17)
+    at sendRegistrationNode (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/socket/engine.js:259:15)
+    at sendLoginNode (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/socket/engine.js:201:19)
+13.39.31 [ERR] Unhandled rejection: Invalid content type for node "identity": object
+[{"module":"ws-client"}] WebSocket closed { code: 1006, reason: '' }
+[{"module":"engine"}] Scheduling reconnect { attempt: 4, backoffMs: 843.75 }
+[{"module":"ws-client"}] WebSocket connecting { url: 'wss://web.whatsapp.com/ws/chat' }
+[{"module":"ws-client"}] undefined WebSocket connection established
+[{"module":"engine"}] undefined Client hello sent
+Trace: [{"module":"noise"}] frame received { tag: undefined }
+    at Object.trace (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/utils/logger.js:53:38)
+    at processFrameBuffer (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/core/noise-handler.js:146:17)
+    at Object.decodeFrame (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/core/noise-handler.js:182:19)
+    at WSClient.<anonymous> (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/socket/engine.js:457:29)
+    at WSClient.emit (node:events:519:28)
+    at WSClient.onMessage (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/socket/ws-client.js:94:14)
+    at WebSocket.<anonymous> (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/socket/ws-client.js:59:46)
+    at WebSocket.emit (node:events:519:28)
+    at Receiver.receiverOnMessage (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/node_modules/ws/lib/websocket.js:1225:20)
+    at Receiver.emit (node:events:519:28)
+[{"module":"noise"}] undefined Noise handshake server hello processed successfully
+[{"module":"noise"}] undefined Noise transport established — connection encrypted
+[{"module":"engine"}] undefined Handshake complete — sending login node
+Trace: [{"module":"engine"}] send node { tag: 'hello', id: undefined }
+    at Object.trace (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/utils/logger.js:53:38)
+    at sendNode (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/socket/engine.js:101:17)
+    at sendLoginNode (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/socket/engine.js:195:15)
+    at /home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/socket/engine.js:135:17
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[{"module":"engine"}] undefined Sending registration node
+Trace: [{"module":"engine"}] send node { tag: 'iq', id: 'BWSZ8WG.4' }
+    at Object.trace (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/utils/logger.js:53:38)
+    at sendNode (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/socket/engine.js:101:17)
+    at sendRegistrationNode (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/socket/engine.js:259:15)
+    at sendLoginNode (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/socket/engine.js:201:19)
+13.39.32 [ERR] Unhandled rejection: Invalid content type for node "identity": object
+[{"module":"ws-client"}] WebSocket closed { code: 1006, reason: '' }
+[{"module":"engine"}] Scheduling reconnect { attempt: 5, backoffMs: 1265.625 }
+[{"module":"ws-client"}] WebSocket connecting { url: 'wss://web.whatsapp.com/ws/chat' }
+[{"module":"ws-client"}] undefined WebSocket connection established
+[{"module":"engine"}] undefined Client hello sent
+Trace: [{"module":"noise"}] frame received { tag: undefined }
+    at Object.trace (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/utils/logger.js:53:38)
+    at processFrameBuffer (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/core/noise-handler.js:146:17)
+    at Object.decodeFrame (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/core/noise-handler.js:182:19)
+    at WSClient.<anonymous> (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/socket/engine.js:457:29)
+    at WSClient.emit (node:events:519:28)
+    at WSClient.onMessage (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/socket/ws-client.js:94:14)
+    at WebSocket.<anonymous> (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/socket/ws-client.js:59:46)
+    at WebSocket.emit (node:events:519:28)
+    at Receiver.receiverOnMessage (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/node_modules/ws/lib/websocket.js:1225:20)
+    at Receiver.emit (node:events:519:28)
+[{"module":"noise"}] undefined Noise handshake server hello processed successfully
+[{"module":"noise"}] undefined Noise transport established — connection encrypted
+[{"module":"engine"}] undefined Handshake complete — sending login node
+Trace: [{"module":"engine"}] send node { tag: 'hello', id: undefined }
+    at Object.trace (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/utils/logger.js:53:38)
+    at sendNode (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/socket/engine.js:101:17)
+    at sendLoginNode (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/socket/engine.js:195:15)
+    at /home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/socket/engine.js:135:17
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[{"module":"engine"}] undefined Sending registration node
+Trace: [{"module":"engine"}] send node { tag: 'iq', id: 'BWSZ8WG.5' }
+    at Object.trace (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/utils/logger.js:53:38)
+    at sendNode (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/socket/engine.js:101:17)
+    at sendRegistrationNode (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/socket/engine.js:259:15)
+    at sendLoginNode (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/socket/engine.js:201:19)
+13.39.35 [ERR] Unhandled rejection: Invalid content type for node "identity": object
+[{"module":"ws-client"}] WebSocket closed { code: 1006, reason: '' }
+[{"module":"engine"}] Max reconnect attempts reached { attempts: 5 }
+                                                                      
