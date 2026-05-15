@@ -1,1 +1,269 @@
-sed -n '194,202p' ~/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/socket/engine.js
+
+13.33.28 [INFO] Menghubungkan ke WhatsApp...
+[{"module":"ws-client"}] WebSocket connecting { url: 'wss://web.whatsapp.com/ws/chat' }
+[{"module":"ws-client"}] undefined WebSocket connection established
+[{"module":"engine"}] undefined Client hello sent
+Trace: [{"module":"noise"}] frame received { tag: undefined }
+    at Object.trace (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/utils/logger.js:53:38)
+    at processFrameBuffer (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/core/noise-handler.js:146:17)
+    at Object.decodeFrame (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/core/noise-handler.js:182:19)
+    at WSClient.<anonymous> (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/socket/engine.js:457:29)
+    at WSClient.emit (node:events:519:28)
+    at WSClient.onMessage (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/socket/ws-client.js:94:14)
+    at WebSocket.<anonymous> (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/socket/ws-client.js:59:46)
+    at WebSocket.emit (node:events:519:28)
+    at Receiver.receiverOnMessage (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/node_modules/ws/lib/websocket.js:1225:20)
+    at Receiver.emit (node:events:519:28)
+[{"module":"engine"}] Handshake failed {
+  err: TypeError [ERR_INVALID_ARG_TYPE]: The "data" argument must be of type string or an instance of Buffer, TypedArray, or DataView. Received an instance of Object
+      at Cipheriv.update (node:internal/crypto/cipher:168:11)
+      at aesEncryptGCM (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/crypto/index.js:99:45)
+      at encryptHandshake (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/core/noise-handler.js:95:51)
+      at Object.processServerHello (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/core/noise-handler.js:197:40)
+      at handleHandshakeFrame (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/socket/engine.js:126:46)
+      at handleFrame (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/socket/engine.js:147:13)
+      at processFrameBuffer (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/core/noise-handler.js:147:13)
+      at Object.decodeFrame (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/core/noise-handler.js:182:19)
+      at WSClient.<anonymous> (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/socket/engine.js:457:29)
+      at WSClient.emit (node:events:519:28) {
+    code: 'ERR_INVALID_ARG_TYPE'
+  }
+}
+[{"module":"engine"}] Frame processing error {
+  err: TypeError: Cannot read properties of null (reading 'decodeFrame')
+      at WSClient.<anonymous> (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/socket/engine.js:457:29)
+      at WSClient.emit (node:events:519:28)
+      at WSClient.onMessage (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/socket/ws-client.js:94:14)
+      at WebSocket.<anonymous> (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/socket/ws-client.js:59:46)
+      at WebSocket.emit (node:events:519:28)
+      at Receiver.receiverOnMessage (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/node_modules/ws/lib/websocket.js:1225:20)
+      at Receiver.emit (node:events:519:28)
+      at Receiver.dataMessage (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/node_modules/ws/lib/receiver.js:569:14)
+      at Receiver.getData (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/node_modules/ws/lib/receiver.js:496:10)
+      at Receiver.startLoop (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/node_modules/ws/lib/receiver.js:167:16)
+}
+[{"module":"ws-client"}] WebSocket closed { code: 1006, reason: '' }
+[{"module":"engine"}] Scheduling reconnect { attempt: 1, backoffMs: 250 }
+[{"module":"ws-client"}] WebSocket connecting { url: 'wss://web.whatsapp.com/ws/chat' }
+[{"module":"ws-client"}] undefined WebSocket connection established
+[{"module":"engine"}] undefined Client hello sent
+Trace: [{"module":"noise"}] frame received { tag: undefined }
+    at Object.trace (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/utils/logger.js:53:38)
+    at processFrameBuffer (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/core/noise-handler.js:146:17)
+    at Object.decodeFrame (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/core/noise-handler.js:182:19)
+    at WSClient.<anonymous> (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/socket/engine.js:457:29)
+    at WSClient.emit (node:events:519:28)
+    at WSClient.onMessage (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/socket/ws-client.js:94:14)
+    at WebSocket.<anonymous> (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/socket/ws-client.js:59:46)
+    at WebSocket.emit (node:events:519:28)
+    at Receiver.receiverOnMessage (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/node_modules/ws/lib/websocket.js:1225:20)
+    at Receiver.emit (node:events:519:28)
+[{"module":"engine"}] Handshake failed {
+  err: TypeError [ERR_INVALID_ARG_TYPE]: The "data" argument must be of type string or an instance of Buffer, TypedArray, or DataView. Received an instance of Object
+      at Cipheriv.update (node:internal/crypto/cipher:168:11)
+      at aesEncryptGCM (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/crypto/index.js:99:45)
+      at encryptHandshake (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/core/noise-handler.js:95:51)
+      at Object.processServerHello (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/core/noise-handler.js:197:40)
+      at handleHandshakeFrame (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/socket/engine.js:126:46)
+      at handleFrame (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/socket/engine.js:147:13)
+      at processFrameBuffer (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/core/noise-handler.js:147:13)
+      at Object.decodeFrame (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/core/noise-handler.js:182:19)
+      at WSClient.<anonymous> (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/socket/engine.js:457:29)
+      at WSClient.emit (node:events:519:28) {
+    code: 'ERR_INVALID_ARG_TYPE'
+  }
+}
+[{"module":"engine"}] Frame processing error {
+  err: TypeError: Cannot read properties of null (reading 'decodeFrame')
+      at WSClient.<anonymous> (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/socket/engine.js:457:29)
+      at WSClient.emit (node:events:519:28)
+      at WSClient.onMessage (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/socket/ws-client.js:94:14)
+      at WebSocket.<anonymous> (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/socket/ws-client.js:59:46)
+      at WebSocket.emit (node:events:519:28)
+      at Receiver.receiverOnMessage (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/node_modules/ws/lib/websocket.js:1225:20)
+      at Receiver.emit (node:events:519:28)
+      at Receiver.dataMessage (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/node_modules/ws/lib/receiver.js:569:14)
+      at Receiver.getData (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/node_modules/ws/lib/receiver.js:496:10)
+      at Receiver.startLoop (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/node_modules/ws/lib/receiver.js:167:16)
+}
+[{"module":"ws-client"}] WebSocket closed { code: 1006, reason: '' }
+[{"module":"engine"}] Scheduling reconnect { attempt: 2, backoffMs: 375 }
+[{"module":"ws-client"}] WebSocket connecting { url: 'wss://web.whatsapp.com/ws/chat' }
+[{"module":"ws-client"}] undefined WebSocket connection established
+[{"module":"engine"}] undefined Client hello sent
+Trace: [{"module":"noise"}] frame received { tag: undefined }
+    at Object.trace (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/utils/logger.js:53:38)
+    at processFrameBuffer (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/core/noise-handler.js:146:17)
+    at Object.decodeFrame (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/core/noise-handler.js:182:19)
+    at WSClient.<anonymous> (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/socket/engine.js:457:29)
+    at WSClient.emit (node:events:519:28)
+    at WSClient.onMessage (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/socket/ws-client.js:94:14)
+    at WebSocket.<anonymous> (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/socket/ws-client.js:59:46)
+    at WebSocket.emit (node:events:519:28)
+    at Receiver.receiverOnMessage (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/node_modules/ws/lib/websocket.js:1225:20)
+    at Receiver.emit (node:events:519:28)
+[{"module":"engine"}] Handshake failed {
+  err: TypeError [ERR_INVALID_ARG_TYPE]: The "data" argument must be of type string or an instance of Buffer, TypedArray, or DataView. Received an instance of Object
+      at Cipheriv.update (node:internal/crypto/cipher:168:11)
+      at aesEncryptGCM (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/crypto/index.js:99:45)
+      at encryptHandshake (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/core/noise-handler.js:95:51)
+      at Object.processServerHello (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/core/noise-handler.js:197:40)
+      at handleHandshakeFrame (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/socket/engine.js:126:46)
+      at handleFrame (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/socket/engine.js:147:13)
+      at processFrameBuffer (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/core/noise-handler.js:147:13)
+      at Object.decodeFrame (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/core/noise-handler.js:182:19)
+      at WSClient.<anonymous> (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/socket/engine.js:457:29)
+      at WSClient.emit (node:events:519:28) {
+    code: 'ERR_INVALID_ARG_TYPE'
+  }
+}
+[{"module":"engine"}] Frame processing error {
+  err: TypeError: Cannot read properties of null (reading 'decodeFrame')
+      at WSClient.<anonymous> (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/socket/engine.js:457:29)
+      at WSClient.emit (node:events:519:28)
+      at WSClient.onMessage (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/socket/ws-client.js:94:14)
+      at WebSocket.<anonymous> (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/socket/ws-client.js:59:46)
+      at WebSocket.emit (node:events:519:28)
+      at Receiver.receiverOnMessage (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/node_modules/ws/lib/websocket.js:1225:20)
+      at Receiver.emit (node:events:519:28)
+      at Receiver.dataMessage (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/node_modules/ws/lib/receiver.js:569:14)
+      at Receiver.getData (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/node_modules/ws/lib/receiver.js:496:10)
+      at Receiver.startLoop (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/node_modules/ws/lib/receiver.js:167:16)
+}
+[{"module":"ws-client"}] WebSocket closed { code: 1006, reason: '' }
+[{"module":"engine"}] Scheduling reconnect { attempt: 3, backoffMs: 562.5 }
+[{"module":"ws-client"}] WebSocket connecting { url: 'wss://web.whatsapp.com/ws/chat' }
+[{"module":"ws-client"}] undefined WebSocket connection established
+[{"module":"engine"}] undefined Client hello sent
+Trace: [{"module":"noise"}] frame received { tag: undefined }
+    at Object.trace (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/utils/logger.js:53:38)
+    at processFrameBuffer (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/core/noise-handler.js:146:17)
+    at Object.decodeFrame (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/core/noise-handler.js:182:19)
+    at WSClient.<anonymous> (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/socket/engine.js:457:29)
+    at WSClient.emit (node:events:519:28)
+    at WSClient.onMessage (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/socket/ws-client.js:94:14)
+    at WebSocket.<anonymous> (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/socket/ws-client.js:59:46)
+    at WebSocket.emit (node:events:519:28)
+    at Receiver.receiverOnMessage (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/node_modules/ws/lib/websocket.js:1225:20)
+    at Receiver.emit (node:events:519:28)
+[{"module":"engine"}] Handshake failed {
+  err: TypeError [ERR_INVALID_ARG_TYPE]: The "data" argument must be of type string or an instance of Buffer, TypedArray, or DataView. Received an instance of Object
+      at Cipheriv.update (node:internal/crypto/cipher:168:11)
+      at aesEncryptGCM (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/crypto/index.js:99:45)
+      at encryptHandshake (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/core/noise-handler.js:95:51)
+      at Object.processServerHello (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/core/noise-handler.js:197:40)
+      at handleHandshakeFrame (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/socket/engine.js:126:46)
+      at handleFrame (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/socket/engine.js:147:13)
+      at processFrameBuffer (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/core/noise-handler.js:147:13)
+      at Object.decodeFrame (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/core/noise-handler.js:182:19)
+      at WSClient.<anonymous> (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/socket/engine.js:457:29)
+      at WSClient.emit (node:events:519:28) {
+    code: 'ERR_INVALID_ARG_TYPE'
+  }
+}
+[{"module":"engine"}] Frame processing error {
+  err: TypeError: Cannot read properties of null (reading 'decodeFrame')
+      at WSClient.<anonymous> (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/socket/engine.js:457:29)
+      at WSClient.emit (node:events:519:28)
+      at WSClient.onMessage (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/socket/ws-client.js:94:14)
+      at WebSocket.<anonymous> (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/socket/ws-client.js:59:46)
+      at WebSocket.emit (node:events:519:28)
+      at Receiver.receiverOnMessage (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/node_modules/ws/lib/websocket.js:1225:20)
+      at Receiver.emit (node:events:519:28)
+      at Receiver.dataMessage (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/node_modules/ws/lib/receiver.js:569:14)
+      at Receiver.getData (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/node_modules/ws/lib/receiver.js:496:10)
+      at Receiver.startLoop (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/node_modules/ws/lib/receiver.js:167:16)
+}
+[{"module":"ws-client"}] WebSocket closed { code: 1006, reason: '' }
+[{"module":"engine"}] Scheduling reconnect { attempt: 4, backoffMs: 843.75 }
+[{"module":"ws-client"}] WebSocket connecting { url: 'wss://web.whatsapp.com/ws/chat' }
+[{"module":"ws-client"}] undefined WebSocket connection established
+[{"module":"engine"}] undefined Client hello sent
+Trace: [{"module":"noise"}] frame received { tag: undefined }
+    at Object.trace (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/utils/logger.js:53:38)
+    at processFrameBuffer (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/core/noise-handler.js:146:17)
+    at Object.decodeFrame (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/core/noise-handler.js:182:19)
+    at WSClient.<anonymous> (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/socket/engine.js:457:29)
+    at WSClient.emit (node:events:519:28)
+    at WSClient.onMessage (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/socket/ws-client.js:94:14)
+    at WebSocket.<anonymous> (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/socket/ws-client.js:59:46)
+    at WebSocket.emit (node:events:519:28)
+    at Receiver.receiverOnMessage (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/node_modules/ws/lib/websocket.js:1225:20)
+    at Receiver.emit (node:events:519:28)
+[{"module":"engine"}] Handshake failed {
+  err: TypeError [ERR_INVALID_ARG_TYPE]: The "data" argument must be of type string or an instance of Buffer, TypedArray, or DataView. Received an instance of Object
+      at Cipheriv.update (node:internal/crypto/cipher:168:11)
+      at aesEncryptGCM (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/crypto/index.js:99:45)
+      at encryptHandshake (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/core/noise-handler.js:95:51)
+      at Object.processServerHello (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/core/noise-handler.js:197:40)
+      at handleHandshakeFrame (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/socket/engine.js:126:46)
+      at handleFrame (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/socket/engine.js:147:13)
+      at processFrameBuffer (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/core/noise-handler.js:147:13)
+      at Object.decodeFrame (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/core/noise-handler.js:182:19)
+      at WSClient.<anonymous> (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/socket/engine.js:457:29)
+      at WSClient.emit (node:events:519:28) {
+    code: 'ERR_INVALID_ARG_TYPE'
+  }
+}
+[{"module":"engine"}] Frame processing error {
+  err: TypeError: Cannot read properties of null (reading 'decodeFrame')
+      at WSClient.<anonymous> (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/socket/engine.js:457:29)
+      at WSClient.emit (node:events:519:28)
+      at WSClient.onMessage (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/socket/ws-client.js:94:14)
+      at WebSocket.<anonymous> (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/socket/ws-client.js:59:46)
+      at WebSocket.emit (node:events:519:28)
+      at Receiver.receiverOnMessage (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/node_modules/ws/lib/websocket.js:1225:20)
+      at Receiver.emit (node:events:519:28)
+      at Receiver.dataMessage (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/node_modules/ws/lib/receiver.js:569:14)
+      at Receiver.getData (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/node_modules/ws/lib/receiver.js:496:10)
+      at Receiver.startLoop (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/node_modules/ws/lib/receiver.js:167:16)
+}
+[{"module":"ws-client"}] WebSocket closed { code: 1006, reason: '' }
+[{"module":"engine"}] Scheduling reconnect { attempt: 5, backoffMs: 1265.625 }
+[{"module":"ws-client"}] WebSocket connecting { url: 'wss://web.whatsapp.com/ws/chat' }
+[{"module":"ws-client"}] undefined WebSocket connection established
+[{"module":"engine"}] undefined Client hello sent
+Trace: [{"module":"noise"}] frame received { tag: undefined }
+    at Object.trace (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/utils/logger.js:53:38)
+    at processFrameBuffer (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/core/noise-handler.js:146:17)
+    at Object.decodeFrame (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/core/noise-handler.js:182:19)
+    at WSClient.<anonymous> (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/socket/engine.js:457:29)
+    at WSClient.emit (node:events:519:28)
+    at WSClient.onMessage (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/socket/ws-client.js:94:14)
+    at WebSocket.<anonymous> (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/socket/ws-client.js:59:46)
+    at WebSocket.emit (node:events:519:28)
+    at Receiver.receiverOnMessage (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/node_modules/ws/lib/websocket.js:1225:20)
+    at Receiver.emit (node:events:519:28)
+[{"module":"engine"}] Handshake failed {
+  err: TypeError [ERR_INVALID_ARG_TYPE]: The "data" argument must be of type string or an instance of Buffer, TypedArray, or DataView. Received an instance of Object
+      at Cipheriv.update (node:internal/crypto/cipher:168:11)
+      at aesEncryptGCM (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/crypto/index.js:99:45)
+      at encryptHandshake (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/core/noise-handler.js:95:51)
+      at Object.processServerHello (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/core/noise-handler.js:197:40)
+      at handleHandshakeFrame (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/socket/engine.js:126:46)
+      at handleFrame (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/socket/engine.js:147:13)
+      at processFrameBuffer (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/core/noise-handler.js:147:13)
+      at Object.decodeFrame (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/core/noise-handler.js:182:19)
+      at WSClient.<anonymous> (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/socket/engine.js:457:29)
+      at WSClient.emit (node:events:519:28) {
+    code: 'ERR_INVALID_ARG_TYPE'
+  }
+}
+[{"module":"engine"}] Frame processing error {
+  err: TypeError: Cannot read properties of null (reading 'decodeFrame')
+      at WSClient.<anonymous> (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/socket/engine.js:457:29)
+      at WSClient.emit (node:events:519:28)
+      at WSClient.onMessage (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/socket/ws-client.js:94:14)
+      at WebSocket.<anonymous> (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/socket/ws-client.js:59:46)
+      at WebSocket.emit (node:events:519:28)
+      at Receiver.receiverOnMessage (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/node_modules/ws/lib/websocket.js:1225:20)
+      at Receiver.emit (node:events:519:28)
+      at Receiver.dataMessage (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/node_modules/ws/lib/receiver.js:569:14)
+      at Receiver.getData (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/node_modules/ws/lib/receiver.js:496:10)
+      at Receiver.startLoop (/home/wayan/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/node_modules/ws/lib/receiver.js:167:16)
+}
+[{"module":"ws-client"}] WebSocket closed { code: 1006, reason: '' }
+[{"module":"engine"}] Max reconnect attempts reached { attempts: 5 }
+                                                                                                                                                                      
+┌──(wayan㉿FrostyDev)-[~/proyek/bot/Ex-Machina-Bot]
+└─$ 
