@@ -1,1 +1,1 @@
-grep -A5 "Sending registration node" /mnt/user-data/uploads/error__3_.txt | head -30
+sed -n '228,235p' ~/proyek/bot/Ex-Machina-Bot/node_modules/ex-machina-proto/dist/socket/engine.js
